@@ -1,0 +1,1 @@
+insert into todo(id, label, completed)values(1, 'Tester testcontainer', false);
