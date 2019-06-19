@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aws-messaging="http://www.springframework.org/schema/cloud/aws/messaging"
+	xsi:schemaLocation="
+	http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd 
+	http://www.springframework.org/schema/cloud/aws/messaging 
+	http://www.springframework.org/schema/cloud/aws/messaging/spring-cloud-aws-messaging.xsd">
+
+	<!-- 
+	<aws-messaging:annotation-driven-queue-listener/>
+	 -->
+	
+	<!-- 
+	<aws-messaging:queue-messaging-template
+		id="messagingTemplate" />
+
+	<bean id="simpleTaskExecutor"
+		class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor">
+		<property name="corePoolSize" value="4" />
+		<property name="maxPoolSize" value="10" />
+		<property name="queueCapacity" value="1" />
+		<property name="WaitForTasksToCompleteOnShutdown"
+			value="true" />
+	</bean>
+	<aws-messaging:annotation-driven-queue-listener
+		task-executor="simpleTaskExecutor"
+		amazon-sqs="test-queue-localstack"
+		wait-time-out="20"/>
+ -->
+</beans>
